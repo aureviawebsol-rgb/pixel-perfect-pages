@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/admin/stations")({
+export const Route = createFileRoute("/admin/stations/")({
   component: Page9,
   head: () => ({
     meta: [
