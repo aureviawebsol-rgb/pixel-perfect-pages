@@ -119,7 +119,7 @@ function Page13() {
 <label className="font-label-sm text-label-sm text-on-surface font-semibold" htmlFor="filter-date">Date Window</label>
 <div className="relative flex items-center">
 <span className="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg">calendar_today</span>
-<input className="w-full h-11 pl-10 pr-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface cursor-pointer focus:bg-surface-container-lowest focus:outline-none transition-colors" id="filter-date" readOnly="" type="text" defaultValue="Sep 20, 2026 - Sep 27, 2026" />
+<input className="w-full h-11 pl-10 pr-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface cursor-pointer focus:bg-surface-container-lowest focus:outline-none transition-colors" id="filter-date" readOnly={true} type="text" defaultValue="Sep 20, 2026 - Sep 27, 2026" />
 </div>
 </div>
 </div>
@@ -260,7 +260,7 @@ function Page13() {
 <button className="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface font-semibold transition-colors" type="button">
                     View Details
                   </button>
-<button className="px-2.5 py-1.5 rounded-lg bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant/40 font-semibold cursor-not-allowed" disabled="" type="button">
+<button className="px-2.5 py-1.5 rounded-lg bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant/40 font-semibold cursor-not-allowed" disabled={true} type="button">
                     Cancel Booking
                   </button>
 </div>
@@ -386,7 +386,7 @@ function Page13() {
           Showing <span className="font-semibold text-on-surface">1-6</span> of <span className="font-semibold text-on-surface">128</span> bookings
         </span>
 <div className="flex items-center gap-space-xs">
-<button className="h-8 px-3 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant/50 cursor-not-allowed" disabled="" type="button">
+<button className="h-8 px-3 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant/50 cursor-not-allowed" disabled={true} type="button">
             Previous
           </button>
 <button className="h-8 w-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm" type="button">

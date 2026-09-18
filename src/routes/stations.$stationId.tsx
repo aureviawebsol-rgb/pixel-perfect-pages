@@ -111,7 +111,7 @@ function Page12() {
 
 <svg className="absolute inset-0 w-full h-full text-border-ui stroke-current" height="100%" width="100%">
 <defs>
-<pattern height="32" id="grid" patternunits="userSpaceOnUse" width="32">
+<pattern height="32" id="grid" patternUnits="userSpaceOnUse" width="32">
 <path d="M 32 0 L 0 0 0 32" fill="none" stroke="currentColor" strokeWidth="0.5"></path>
 </pattern>
 </defs>
@@ -408,7 +408,7 @@ function Page12() {
 <div>
 <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Station URL</label>
 <div className="flex items-center gap-2">
-<input className="flex-1 bg-surface-ground border border-border-ui rounded px-3 py-1.5 text-sm font-mono text-text-main select-all focus:outline-none" id="shortUrlInput" readOnly="" type="text" defaultValue="evgo.in/s/101" />
+<input className="flex-1 bg-surface-ground border border-border-ui rounded px-3 py-1.5 text-sm font-mono text-text-main select-all focus:outline-none" id="shortUrlInput" readOnly={true} type="text" defaultValue="evgo.in/s/101" />
 <button className="px-3 py-1.5 bg-primary text-white text-xs font-medium rounded hover:bg-primary-hover transition-colors flex items-center gap-1" id="copyLinkBtn" type="button">
 <span className="material-symbols-outlined text-[14px]">content_copy</span>
 <span id="copyBtnLabel">Copy Link</span>
@@ -418,7 +418,7 @@ function Page12() {
 
 <div className="flex flex-col items-center justify-center p-4 bg-surface-ground border border-border-ui rounded">
 <div className="w-36 h-36 bg-surface-card border border-border-ui p-2 rounded flex items-center justify-center">
-<svg className="w-full h-full text-text-main" fill="currentColor" viewbox="0 0 100 100">
+<svg className="w-full h-full text-text-main" fill="currentColor" viewBox="0 0 100 100">
 <rect fill="none" height="28" rx="1" stroke="currentColor" strokeWidth="5" width="28" x="5" y="5"></rect>
 <rect height="12" width="12" x="13" y="13"></rect>
 <rect fill="none" height="28" rx="1" stroke="currentColor" strokeWidth="5" width="28" x="67" y="5"></rect>

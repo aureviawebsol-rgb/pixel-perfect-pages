@@ -224,7 +224,7 @@ function Page15() {
 
 <div className="flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low">
 <div className="bg-white p-3 rounded-lg shadow-sm flex items-center justify-center">
-<svg className="w-32 h-32 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<svg className="w-32 h-32 text-on-surface" fill="currentColor" viewBox="0 0 100 100">
 
 <path d="M5 5h30v30H5zM10 10v20h20V10zm5 5h10v10H15z"></path>
 <path d="M65 5h30v30H65zM70 10v20h20V10zm5 5h10v10H75z"></path>
@@ -283,7 +283,7 @@ function Page15() {
 <label className="font-label-sm text-label-sm font-semibold text-on-surface-variant" htmlFor="cancelReasonSelect">Cancellation Reason</label>
 <div className="relative">
 <select className="w-full h-11 px-3 bg-surface-container-lowest text-on-surface rounded-lg font-body-md text-body-md appearance-none focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="cancelReasonSelect">
-<option disabled="" value="">Select Reason</option>
+<option disabled={true} value="">Select Reason</option>
 <option value="Customer request">Customer request</option>
 <option value="Station maintenance">Station maintenance</option>
 <option value="Slot conflict">Slot conflict</option>

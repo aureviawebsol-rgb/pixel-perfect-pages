@@ -152,7 +152,7 @@ function Page11() {
 <div className="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md">
 <span className="font-body-sm text-body-sm text-on-surface-variant">Showing 1-2 of 2 upcoming bookings</span>
 <div className="flex items-center gap-space-xs">
-<button className="px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-colors disabled:opacity-50" disabled="" type="button">
+<button className="px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-colors disabled:opacity-50" disabled={true} type="button">
             Previous
           </button>
 <button className="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center" type="button">

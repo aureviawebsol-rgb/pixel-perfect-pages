@@ -311,7 +311,7 @@ function Page9() {
 <div className="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
 <span className="font-body-sm text-body-sm text-on-surface-variant" id="paginationSummary">Showing 1-5 of 5 stations</span>
 <div className="flex items-center gap-space-xs">
-<button className="px-space-md h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed" disabled="">
+<button className="px-space-md h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed" disabled={true}>
             Previous
           </button>
 <button className="w-9 h-9 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">

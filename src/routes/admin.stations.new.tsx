@@ -50,7 +50,7 @@ function Page7() {
 <span>Station Name <span className="text-secondary">*</span></span>
 <span className="font-code-sm text-code-sm text-on-surface-variant">Public identifier</span>
 </label>
-<input className="w-full h-11 px-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="stationName" name="stationName" placeholder="e.g. Indiranagar Station" required="" type="text" />
+<input className="w-full h-11 px-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="stationName" name="stationName" placeholder="e.g. Indiranagar Station" required={true} type="text" />
 </div>
 
 <div className="flex flex-col gap-space-xs">
@@ -58,7 +58,7 @@ function Page7() {
 <span>Address <span className="text-secondary">*</span></span>
 <span className="font-code-sm text-code-sm text-on-surface-variant">Navigational target</span>
 </label>
-<textarea className="w-full p-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg outline-none focus:bg-surface-container-lowest resize-none transition-colors" id="stationAddress" name="stationAddress" placeholder="Full street address, landmark, city, postal code" required="" rows="3"></textarea>
+<textarea className="w-full p-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg outline-none focus:bg-surface-container-lowest resize-none transition-colors" id="stationAddress" name="stationAddress" placeholder="Full street address, landmark, city, postal code" required={true} rows={3}></textarea>
 </div>
 
 <div className="flex flex-col gap-space-xs">
@@ -67,13 +67,13 @@ function Page7() {
 <label className="font-label-md text-label-md text-on-surface font-semibold" htmlFor="latitude">
                   Latitude <span className="text-secondary">*</span>
 </label>
-<input className="w-full h-11 px-space-md bg-surface-container-low font-code-sm text-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="latitude" name="latitude" placeholder="12.9784" required="" type="text" defaultValue="12.9784" />
+<input className="w-full h-11 px-space-md bg-surface-container-low font-code-sm text-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="latitude" name="latitude" placeholder="12.9784" required={true} type="text" defaultValue="12.9784" />
 </div>
 <div className="flex flex-col gap-space-xs">
 <label className="font-label-md text-label-md text-on-surface font-semibold" htmlFor="longitude">
                   Longitude <span className="text-secondary">*</span>
 </label>
-<input className="w-full h-11 px-space-md bg-surface-container-low font-code-sm text-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="longitude" name="longitude" placeholder="77.6408" required="" type="text" defaultValue="77.6408" />
+<input className="w-full h-11 px-space-md bg-surface-container-low font-code-sm text-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="longitude" name="longitude" placeholder="77.6408" required={true} type="text" defaultValue="77.6408" />
 </div>
 </div>
 <div className="flex items-center justify-between pt-1">
@@ -92,7 +92,7 @@ function Page7() {
 </label>
 <div className="relative flex items-center">
 <span className="absolute left-space-md font-headline-md text-headline-md text-on-surface-variant select-none">₹</span>
-<input className="w-full h-11 pl-8 pr-space-md bg-surface-container-low font-code-sm text-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="pricePerHour" min="0" name="pricePerHour" placeholder="60.00" required="" step="0.50" type="number" />
+<input className="w-full h-11 pl-8 pr-space-md bg-surface-container-low font-code-sm text-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="pricePerHour" min="0" name="pricePerHour" placeholder="60.00" required={true} step="0.50" type="number" />
 </div>
 <span className="font-code-sm text-code-sm text-on-surface-variant">Billed in standard hourly intervals</span>
 </div>
@@ -100,7 +100,7 @@ function Page7() {
 <label className="font-label-md text-label-md text-on-surface font-semibold" htmlFor="totalChargers">
                 Total Chargers <span className="text-secondary">*</span>
 </label>
-<input className="w-full h-11 px-space-md bg-surface-container-low font-code-sm text-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="totalChargers" max="50" min="1" name="totalChargers" placeholder="6" required="" type="number" />
+<input className="w-full h-11 px-space-md bg-surface-container-low font-code-sm text-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="totalChargers" max="50" min="1" name="totalChargers" placeholder="6" required={true} type="number" />
 <span className="font-code-sm text-code-sm text-on-surface-variant">Allocated physical charging bays</span>
 </div>
 </div>
@@ -117,7 +117,7 @@ function Page7() {
 <label className="cursor-pointer group flex flex-col justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
 <div className="flex items-center justify-between w-full">
 <span className="material-symbols-outlined text-primary text-[1.5rem]">ev_charger</span>
-<input defaultChecked="" className="w-4 h-4 rounded accent-primary cursor-pointer" id="connCCS2" name="connectors" type="checkbox" defaultValue="CCS2" />
+<input defaultChecked={true} className="w-4 h-4 rounded accent-primary cursor-pointer" id="connCCS2" name="connectors" type="checkbox" defaultValue="CCS2" />
 </div>
 <div className="mt-space-md">
 <span className="font-label-md text-label-md font-bold text-on-surface block">CCS2</span>
@@ -128,7 +128,7 @@ function Page7() {
 <label className="cursor-pointer group flex flex-col justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
 <div className="flex items-center justify-between w-full">
 <span className="material-symbols-outlined text-primary text-[1.5rem]">electrical_services</span>
-<input defaultChecked="" className="w-4 h-4 rounded accent-primary cursor-pointer" id="connType2" name="connectors" type="checkbox" defaultValue="Type 2" />
+<input defaultChecked={true} className="w-4 h-4 rounded accent-primary cursor-pointer" id="connType2" name="connectors" type="checkbox" defaultValue="Type 2" />
 </div>
 <div className="mt-space-md">
 <span className="font-label-md text-label-md font-bold text-on-surface block">Type 2</span>
@@ -171,7 +171,7 @@ function Page7() {
 </div>
 </div>
 <label className="relative inline-flex items-center cursor-pointer">
-<input defaultChecked="" className="sr-only peer" id="stationActiveToggle" type="checkbox" />
+<input defaultChecked={true} className="sr-only peer" id="stationActiveToggle" type="checkbox" />
 <div className="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
 </label>
 </div>

@@ -37,33 +37,33 @@ function Page4() {
 </button>
 </div>
 
-<form className="flex flex-col gap-space-md" id="register-form" noValidate="">
+<form className="flex flex-col gap-space-md" id="register-form" noValidate={true}>
 
 <div className="flex flex-col gap-space-xs">
 <label className="font-label-md text-label-md text-on-surface" htmlFor="name">Full Name</label>
 <div className="relative flex items-center">
-<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="name" name="name" placeholder="Alex Morgan" required="" type="text" />
+<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="name" name="name" placeholder="Alex Morgan" required={true} type="text" />
 </div>
 </div>
 
 <div className="flex flex-col gap-space-xs">
 <label className="font-label-md text-label-md text-on-surface" htmlFor="email">Email Address</label>
 <div className="relative flex items-center">
-<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="email" name="email" placeholder="alex.morgan@example.com" required="" type="email" />
+<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="email" name="email" placeholder="alex.morgan@example.com" required={true} type="email" />
 </div>
 </div>
 
 <div className="flex flex-col gap-space-xs">
 <label className="font-label-md text-label-md text-on-surface" htmlFor="phone">Phone Number</label>
 <div className="relative flex items-center">
-<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="phone" name="phone" placeholder="+91 98765 43210" required="" type="tel" />
+<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="phone" name="phone" placeholder="+91 98765 43210" required={true} type="tel" />
 </div>
 </div>
 
 <div className="flex flex-col gap-space-xs">
 <label className="font-label-md text-label-md text-on-surface" htmlFor="password">Password</label>
 <div className="relative flex items-center">
-<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="password" minlength="8" name="password" placeholder="••••••••" required="" type="password" />
+<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="password" minlength="8" name="password" placeholder="••••••••" required={true} type="password" />
 </div>
 <span className="font-body-sm text-body-sm text-on-surface-variant">Must be at least 8 characters with a mix of letters and numbers</span>
 </div>
@@ -71,13 +71,13 @@ function Page4() {
 <div className="flex flex-col gap-space-xs">
 <label className="font-label-md text-label-md text-on-surface" htmlFor="confirm-password">Confirm Password</label>
 <div className="relative flex items-center">
-<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="confirm-password" name="confirm_password" placeholder="••••••••" required="" type="password" />
+<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="confirm-password" name="confirm_password" placeholder="••••••••" required={true} type="password" />
 </div>
 </div>
 
 <div className="flex items-start gap-space-sm pt-space-xs">
 <div className="flex items-center h-5">
-<input className="w-5 h-5 rounded bg-surface-container text-primary-container focus:ring-0 cursor-pointer accent-primary-container" id="terms" name="terms" required="" type="checkbox" />
+<input className="w-5 h-5 rounded bg-surface-container text-primary-container focus:ring-0 cursor-pointer accent-primary-container" id="terms" name="terms" required={true} type="checkbox" />
 </div>
 <label className="font-body-sm text-body-sm text-on-surface select-none cursor-pointer" htmlFor="terms">
           I agree to Terms &amp; Conditions

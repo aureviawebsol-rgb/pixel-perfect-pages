@@ -96,15 +96,15 @@ function Page3() {
 <label className="text-sm font-medium text-on-surface block mb-2">Connector Type</label>
 <div className="space-y-2">
 <label className="flex items-center gap-2 text-sm text-on-surface cursor-pointer">
-<input defaultChecked="" className="rounded border-outline text-primary focus:ring-primary h-4 w-4" type="checkbox" />
+<input defaultChecked={true} className="rounded border-outline text-primary focus:ring-primary h-4 w-4" type="checkbox" />
 <span>CCS2</span>
 </label>
 <label className="flex items-center gap-2 text-sm text-on-surface cursor-pointer">
-<input defaultChecked="" className="rounded border-outline text-primary focus:ring-primary h-4 w-4" type="checkbox" />
+<input defaultChecked={true} className="rounded border-outline text-primary focus:ring-primary h-4 w-4" type="checkbox" />
 <span>CHAdeMO</span>
 </label>
 <label className="flex items-center gap-2 text-sm text-on-surface cursor-pointer">
-<input defaultChecked="" className="rounded border-outline text-primary focus:ring-primary h-4 w-4" type="checkbox" />
+<input defaultChecked={true} className="rounded border-outline text-primary focus:ring-primary h-4 w-4" type="checkbox" />
 <span>Type 2</span>
 </label>
 <label className="flex items-center gap-2 text-sm text-on-surface cursor-pointer">
@@ -129,7 +129,7 @@ function Page3() {
 <div className="flex items-center justify-between pt-1">
 <label className="text-sm font-medium text-on-surface cursor-pointer" htmlFor="availToggle">Available now</label>
 <label className="relative inline-flex items-center cursor-pointer">
-<input defaultChecked="" className="sr-only peer" id="availToggle" type="checkbox" />
+<input defaultChecked={true} className="sr-only peer" id="availToggle" type="checkbox" />
 <div className="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
 </label>
 </div>

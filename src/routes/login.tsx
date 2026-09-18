@@ -51,7 +51,7 @@ function Page2() {
 <div className="flex flex-col gap-1.5">
 <label className="font-label-md text-label-md text-on-surface font-medium" htmlFor="email">Email Address</label>
 <div className="relative flex items-center">
-<input className="w-full h-11 px-3.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container-lowest transition-colors shadow-inner" id="email" name="email" placeholder="name@example.com" required="" type="email" defaultValue="alex.turner@fleetlogix.io" />
+<input className="w-full h-11 px-3.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container-lowest transition-colors shadow-inner" id="email" name="email" placeholder="name@example.com" required={true} type="email" defaultValue="alex.turner@fleetlogix.io" />
 </div>
 </div>
 
@@ -61,7 +61,7 @@ function Page2() {
 <a className="font-label-sm text-label-sm text-primary hover:underline font-semibold" href="#">Forgot Password?</a>
 </div>
 <div className="relative flex items-center">
-<input className="w-full h-11 pl-3.5 pr-11 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container-lowest transition-colors shadow-inner" id="password" name="password" placeholder="••••••••" required="" type="password" />
+<input className="w-full h-11 pl-3.5 pr-11 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container-lowest transition-colors shadow-inner" id="password" name="password" placeholder="••••••••" required={true} type="password" />
 <button aria-label="Toggle password visibility" className="absolute right-0 top-0 bottom-0 px-3.5 flex items-center justify-center text-outline hover:text-on-surface transition-colors" id="toggle-password" type="button">
 <span className="material-symbols-outlined text-[20px]" id="password-icon">visibility</span>
 </button>
@@ -70,7 +70,7 @@ function Page2() {
 
 <div className="flex items-center justify-between mt-1">
 <label className="flex items-center gap-2.5 cursor-pointer select-none">
-<input defaultChecked="" className="w-4 h-4 rounded bg-surface-container-low text-primary accent-primary focus:ring-0 cursor-pointer" id="remember-me" name="remember-me" type="checkbox" />
+<input defaultChecked={true} className="w-4 h-4 rounded bg-surface-container-low text-primary accent-primary focus:ring-0 cursor-pointer" id="remember-me" name="remember-me" type="checkbox" />
 <span className="font-body-sm text-body-sm text-on-surface">Remember me</span>
 </label>
 </div>

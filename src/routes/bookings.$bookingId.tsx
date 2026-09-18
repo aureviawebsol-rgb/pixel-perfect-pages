@@ -65,7 +65,7 @@ function Page5() {
 </div>
 
 <div className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm my-space-xs">
-<svg className="w-48 h-48 sm:w-56 sm:h-56 text-primary" fill="currentColor" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg className="w-48 h-48 sm:w-56 sm:h-56 text-primary" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 
 <path d="M 10 10 H 38 V 38 H 10 Z M 14 14 V 34 H 34 V 14 Z"></path>
 <rect height="12" width="12" x="18" y="18"></rect>
