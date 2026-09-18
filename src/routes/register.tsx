@@ -63,7 +63,7 @@ function Page4() {
 <div className="flex flex-col gap-space-xs">
 <label className="font-label-md text-label-md text-on-surface" htmlFor="password">Password</label>
 <div className="relative flex items-center">
-<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="password" minlength="8" name="password" placeholder="••••••••" required={true} type="password" />
+<input className="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-low transition-colors" id="password" minLength={8} name="password" placeholder="••••••••" required={true} type="password" />
 </div>
 <span className="font-body-sm text-body-sm text-on-surface-variant">Must be at least 8 characters with a mix of letters and numbers</span>
 </div>
